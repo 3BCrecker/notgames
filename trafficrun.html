@@ -1,0 +1,69 @@
+<style type="text/css">
+    body{
+        background-image: url("BG.png"); 
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
+<head>
+    <body>
+      <div id="game-area" class="box">
+            <div class="box-content">
+              <article id="wdg_game" class="wdg_game">
+                <div id="game-integration" style="min-height: 600px" class="">
+                  <div class="gamer-loading-container">
+                  <div id="backgroundScreen" style="background-image: url(https://gamesgamescdn.com/system/static/thumbs/spil_thumb_big/24663/jpeg_200X120_176763_1568883270.jpg?1630790139)"></div>
+                  <div class="gameIntegrationFeedbackScreen activeFeedbackScreen" id="theGame"><iframe onload="gameLoaded();" src="https://html5.gamedistribution.com/c2d0247f67ca4333a7ea5bebf8707ef1/?timestamp=1678232410&amp;countryCode=es&amp;siteid=88&amp;channelid=1&amp;siteLocale=es&amp;locale=es&amp;gd_sdk_referrer_url=https%3A%2F%2Fwww.juegos.com%2Fjuego%2Ftraffic-run" width="450" height="600" scrolling="none" frameborder="0" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen" data-ruffle-polyfilled=""></iframe></div>
+                    <script>
+                      displayGame();
+                    </script>
+                </div>
+              </article>
+            </div>
+            <div class="game-header">
+              <div class="game-options-menu"><span></span></div>
+              <div class="right-content">
+                <div class="ui-tooltip-wrapper top game-button-wrapper">
+    <div id="signin-to-fav" class="gamefav-icon">
+  <i class="sp-i__star-o"></i>
+  <div class="ui-tooltip">Añadir a favoritos</div>
+  <div class="ui-tooltip d-none">
+    <a href="/users/auth/gamesgamesconnect">Iniciar sesión</a>
+    o
+    <a href="/users/auth/gamesgamesconnect">¡Regístrate yas</a>
+    para agregar este juego a tus favoritos
+  </div>
+</div>
+<script>
+  document.getElementById("signin-to-fav").onclick = function(){
+    [...this.getElementsByClassName("ui-tooltip")].forEach(elm => elm.classList.toggle("d-none"));
+    this.onclick = null
+  };
+</script>
+
+</div>
+
+                <div class="ui-tooltip-wrapper top game-button-wrapper">
+                  <a href="#gameinfo" class="gameinfo-icon" aria-label="gameinfo">
+                    <i class="sp-i__gamepad"></i>
+                  </a>
+                  <div class="ui-tooltip">Descripción</div>
+                </div>
+
+                <div id="wdg_zoom_bar" class="wdg_zoom_bar ui-tooltip-wrapper">
+                  <div class="left">
+                    <a id="button_zoomin" class="zoom-controls"> <i class="sp-i__fullscreen"></i>
+                    </a>
+                    <div class="ui-tooltip">Pantalla completa</div>
+                  </div>
+                </div>
+              <div class="ui-tooltip-wrapper">
+      <a href="#comments" aria-label="comments" class="comments-icon">
+          <i class="sp-i__comment"></i>
+      </a>
+      <div class="ui-tooltip">Comentarios</div>
+  </div></div>
+            </div>
+          </div>
+    </body>
+</head>
