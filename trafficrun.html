@@ -20,50 +20,5 @@
                 </div>
               </article>
             </div>
-            <div class="game-header">
-              <div class="game-options-menu"><span></span></div>
-              <div class="right-content">
-                <div class="ui-tooltip-wrapper top game-button-wrapper">
-    <div id="signin-to-fav" class="gamefav-icon">
-  <i class="sp-i__star-o"></i>
-  <div class="ui-tooltip">Añadir a favoritos</div>
-  <div class="ui-tooltip d-none">
-    <a href="/users/auth/gamesgamesconnect">Iniciar sesión</a>
-    o
-    <a href="/users/auth/gamesgamesconnect">¡Regístrate yas</a>
-    para agregar este juego a tus favoritos
-  </div>
-</div>
-<script>
-  document.getElementById("signin-to-fav").onclick = function(){
-    [...this.getElementsByClassName("ui-tooltip")].forEach(elm => elm.classList.toggle("d-none"));
-    this.onclick = null
-  };
-</script>
-
-</div>
-
-                <div class="ui-tooltip-wrapper top game-button-wrapper">
-                  <a href="#gameinfo" class="gameinfo-icon" aria-label="gameinfo">
-                    <i class="sp-i__gamepad"></i>
-                  </a>
-                  <div class="ui-tooltip">Descripción</div>
-                </div>
-
-                <div id="wdg_zoom_bar" class="wdg_zoom_bar ui-tooltip-wrapper">
-                  <div class="left">
-                    <a id="button_zoomin" class="zoom-controls"> <i class="sp-i__fullscreen"></i>
-                    </a>
-                    <div class="ui-tooltip">Pantalla completa</div>
-                  </div>
-                </div>
-              <div class="ui-tooltip-wrapper">
-      <a href="#comments" aria-label="comments" class="comments-icon">
-          <i class="sp-i__comment"></i>
-      </a>
-      <div class="ui-tooltip">Comentarios</div>
-  </div></div>
-            </div>
-          </div>
     </body>
 </head>
