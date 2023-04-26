@@ -1,0 +1,59 @@
+<style type="text/css">
+    body{
+        background-image: url("BG.png"); 
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    h2{
+        font-size: 4em;
+        font-weight: 500;
+        color: #222;
+        letter-spacing: 5px;
+        transition: 0.5s;
+        cursor: default;
+    }
+    h2:hover{
+        color: #fff;
+        text-shadow: 0 0 5px #03e9f4,
+            0 0 25px #03e9f4,
+            0 0 50px #03e9f4,
+            0 0 100px #03e9f4;
+    }
+    divcolorsandforms{
+        height: 200px;
+        width: 200px;
+        border: 1px solid #333;
+        transition: all 0.4s ease;
+    }
+</style>
+<script>
+    function yeabtnfunc(){
+        console.log('I got clicked!');
+        console.warn('I got clicked!');
+        console.error('I got clicked!');
+        alert('I got clicked!');
+    }
+</script>
+<head>
+    <body>
+        <div style="background-color: black;">
+            <h2>Pass your mouse here!</h2>
+        </div>
+        <button onclick="yeabtnfunc()">yea</button>
+        <input type="text">
+        <input type="checkbox">
+        <input type="color">
+        <input type="file">
+        <input type="date">
+        <input type="datetime">
+        <input type="hidden">
+        <input type="number">
+        <input type="image">
+        <input type="radio">
+        <input type="radio">
+        <input type="month">
+        <input type="password">
+        <input type="url">
+        <input type="submit">
+    </body>
+</head>
